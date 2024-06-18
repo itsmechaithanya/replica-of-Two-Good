@@ -73,26 +73,26 @@ cursor();
 
 function videoan(){
     var vid = document.querySelector("#video-cont")
-var play = document.querySelector("#play")
+    var play = document.querySelector("#play")
 
-vid.addEventListener("mouseenter", function(){
-    gsap.to(play,{
-        opacity : 1,
-        scale : 1
+    vid.addEventListener("mouseenter", function(){
+        gsap.to(play,{
+            opacity : 1,
+            scale : 1
+        });
     });
-});
-vid.addEventListener("mouseleave",function(){
-    gsap.to(play,{
-        opacity : 0,
-        scale : 0
+    vid.addEventListener("mouseleave",function(){
+        gsap.to(play,{
+            opacity : 0,
+            scale : 0
+        });
     });
-});
-vid.addEventListener("mousemove",function(dets){
-    gsap.to(play,{
-       left:dets.x-70,
-       top:dets.y-80
+    vid.addEventListener("mousemove",function(dets){
+        gsap.to(play,{
+        left:dets.x-70,
+        top:dets.y-80
+        });
     });
-});
 }
 videoan();
 
